@@ -13,6 +13,14 @@
 | **Website** | https://github.com/TechieGoku2623/rms-acoustic-harmonic-fault-predictor |
 | **Topics** | `python` `asyncio` `manufacturing` `predictive-maintenance` `signal-processing` `vibration` |
 
+## Watch the demo
+
+<p align="center">
+  <img src="docs/demo.gif" alt="RMS Acoustic Harmonic Fault Predictor dashboard walkthrough" width="920"/>
+</p>
+
+Play the video: [docs/watch.html](docs/watch.html)
+
 ## The problem this solves
 
 Bearings and shafts show a fault in the vibration spectrum before they fail on the line. A clipped sample or a gap in the sequence will imitate that signature if every buffer is treated as clean audio.
