@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rms-acoustic-harmonic-fault-predictor"
 version = "1.0.0"
-description = "RMS Acoustic Harmonic Fault Predictor"
+description = "Vibration window scorer using RMS, kurtosis, and Goertzel harmonics for bearing-style fault ratios."
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "TechieGoku2623" }]
