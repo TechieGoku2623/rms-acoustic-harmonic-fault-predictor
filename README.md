@@ -13,6 +13,12 @@
 | **Website** | https://github.com/TechieGoku2623/rms-acoustic-harmonic-fault-predictor |
 | **Topics** | `python` `asyncio` `manufacturing` `predictive-maintenance` `signal-processing` `vibration` |
 
+## The problem this solves
+
+Bearings and shafts show a fault in the vibration spectrum before they fail on the line. A clipped sample or a gap in the sequence will imitate that signature if every buffer is treated as clean audio.
+
+RMS Acoustic Harmonic Fault Predictor computes RMS, crest factor, and excess kurtosis, then runs Goertzel at the first, second, and third harmonics. Silence raises. Clipped samples are clamped. A sequence gap is recorded as a dropout. The published decision is a fault flag plus the harmonic ratio, in the spirit of ISO 10816 vibration evaluation.
+
 ## Walkthrough
 
 ### How it works
