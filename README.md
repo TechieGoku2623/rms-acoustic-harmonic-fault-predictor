@@ -2,6 +2,11 @@
 
 A high-throughput, low-latency asynchronous engine engineered to resolve bearing-style harmonic faults in a numeric acoustic window by scoring RMS, crest factor, excess kurtosis, and a Goertzel ratio of the second and third harmonics against a configured fundamental.
 
+Website: https://github.com/TechieGoku2623/rms-acoustic-harmonic-fault-predictor
+
+Topics: `python` `asyncio` `manufacturing` `predictive-maintenance` `signal-processing` `vibration`
+
+
 ## 🏗️ Systems Architecture & Event Topology
 
 `RmsAcousticHarmonicFaultPredictor.run` accepts the windows that actually arrived. Each record is a mapping with `sequence_id` and `samples`. An `asyncio.Lock` serializes the batch. Ingress validates the cursor, then each present window is clamped, scored, and reduced to one report.
@@ -15,6 +20,8 @@ The header is `struct` format `>dII`: float64 sample rate, uint32 length, uint32
 ISO 10816 is the commentary reference for broadband RMS severity bands. This module does not assign a machine zone and does not certify a balance grade.
 
 ## 📊 Core Visual Walkthrough & Engine Pipeline Flow
+
+![Terminal walkthrough](docs/assets/terminal-walkthrough.gif)
 
 ```
 sequence_id, samples[]
